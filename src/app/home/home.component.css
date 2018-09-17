@@ -1,0 +1,19 @@
+.landing-div
+{
+    background-color: #530317;
+    /* background-image: url('/src/assets/img/Assets/1261.png'); */
+    opacity:5%; 
+}
+.banner
+{
+    color: #fff;
+    min-height: 698px;
+    
+}
+.yellow-text
+{
+    color: #ffcf27;
+}
+h1{
+    font-size: 50px;
+}
