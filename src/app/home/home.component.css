@@ -7,7 +7,6 @@
 .banner
 {
     color: #fff;
-    
 }
 .yellow-text
 {
@@ -15,4 +14,26 @@
 }
 h1{
     font-size: 50px;
+}
+.centered-text
+{
+    text-align: center;
+}
+.pink-text
+{
+    color: #5c0426;
+}
+.not-full-width
+{
+width: 75%;
+}
+.half-width
+{
+width: 50%;
+}
+ p{
+    font-size: 18px;
+}
+h6{
+    font-size: 28px;
 }
