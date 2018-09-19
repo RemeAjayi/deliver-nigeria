@@ -54,8 +54,21 @@ h6{
 {
   margin-bottom: -100px
 } */
-.img-fluid
+/* .img-fluid
 {
     max-width: 100%;
     height: auto;
+} */
+#basic-addon2
+{
+    background-color: #5c0429;
+    border-radius: 50px;
+    border: 0; 
+    color: #fff;
+    padding: 10px;
+}
+#suscribe-email
+{
+    border-radius: 50px;
+    border-right: 0;
 }
