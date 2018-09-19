@@ -6,13 +6,21 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LandingDivComponent } from './landing-div/landing-div.component';
+import { DispatchDivComponent } from './dispatch-div/dispatch-div.component';
+import { SuscribeComponent } from './suscribe/suscribe.component';
+import { FooterComponent } from './footer/footer.component';
+import { TestimonialComponent } from './testimonial/testimonial.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    LandingDivComponent
+    LandingDivComponent,
+    DispatchDivComponent,
+    SuscribeComponent,
+    FooterComponent,
+    TestimonialComponent
   ],
   imports: [
     BrowserModule,
