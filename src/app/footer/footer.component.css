@@ -1,0 +1,30 @@
+footer
+{
+    background-color: #121212;
+    color: #fff;
+}
+
+ .footer-links 
+{
+    list-style-type: none;
+}
+.footer-link
+{
+    padding-bottom: .5rem;
+}
+.footer-link-active
+{
+    font-weight: bold;
+    padding-bottom: .5rem;
+}
+.lower-footer-links li
+{
+ display: block;
+ float: right !important;
+ padding: 0 .5rem;
+}
+/* .lower-footer
+{
+    background-color: black;
+} */ 
+/* remove from container so it can be full */
