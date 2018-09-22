@@ -10,6 +10,8 @@ import { DispatchDivComponent } from './dispatch-div/dispatch-div.component';
 import { SuscribeComponent } from './suscribe/suscribe.component';
 import { FooterComponent } from './footer/footer.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
+import { CarouselModule } from 'ngx-bootstrap';
+import { BsDropdownModule } from 'ngx-bootstrap';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { TestimonialComponent } from './testimonial/testimonial.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CarouselModule.forRoot(),
+    BsDropdownModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

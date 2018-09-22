@@ -19,12 +19,16 @@ footer
 }
 .lower-footer-links li
 {
- display: block;
- float: right !important;
+ display: block !important;
+ /* float: right !important; */
+ text-align: right;
  padding: 0 .5rem;
 }
-/* .lower-footer
+.lower-footer-links{
+    float: right;
+}
+.lower-footer
 {
     background-color: black;
-} */ 
+} 
 /* remove from container so it can be full */

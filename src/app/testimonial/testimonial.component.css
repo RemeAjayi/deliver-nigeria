@@ -6,3 +6,27 @@
 {
     text-align: center;
 }
+:host >>>.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: #707070;
+
+}
+:host >>>.carousel-indicators .active {
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+    background-color: #000000;
+}
+host >>>.carousel-control span {
+    color: #707070;
+   
+  }
+
+/* why does this work? and not work without host >>> */
