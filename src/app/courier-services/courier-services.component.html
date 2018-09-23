@@ -13,10 +13,10 @@
   </div>
   <div class="row">
       <div class="input-group m-2">
-          <input type="text" class="form-control" placeholder="Pickup Address">
-          <input type="text" class="form-control" placeholder="Delivery Address">
+          <input type="text" class="form-control" id="rounded-input" placeholder="Pickup Address">
+          <input type="text" class="form-control" id="input-2" placeholder="Delivery Address">
           <div class="input-group-append">
-              <span class="input-group-text" id="" (click)="createComponent()">Request Boxit</span>
+              <span class="input-group-text" id="request-button" (click)="createComponent()">Request Boxit</span>
             </div>
         </div>
   </div>
@@ -27,3 +27,119 @@
 <template #drivergrid>
 
 </template>
+<div class="container">
+<div class="row m-5">
+<div class="col-md-4">
+<div class="row no-gutters">
+<div class="col-sm-6">
+<img src="/src/assets/img/Assets/driver.png" class="img-fluid">
+</div>
+<div class="col-sm-6">
+<span>Over 300 Registered Dispatchers</span>   
+</div>
+</div>
+</div>
+<!--end of col-1  -->
+<div class="col-md-4">
+        <div class="row no-gutters">
+        <div class="col-sm-6">
+        <img src="/src/assets/img/Assets/place.png" class="img-fluid">
+        </div>
+        <div class="col-sm-6">
+           <span>Over 3000 Deliveries Made</span>  
+        </div>
+        </div>
+</div>
+<!--end of col-2  -->
+<div class="col-md-4">
+        <div class="row no-gutters">
+        <div class="col-sm-6">
+        <img src="/src/assets/img/Assets/smartphone.png">
+        </div>
+        <div class="col-sm-6">
+       <span>Over 100 Daily Request</span>  
+        </div>
+        </div>
+</div>
+<!--end of col-3  -->
+</div>
+
+<div class="row p-2 my-2 mx-auto align-items-center">
+        <div class="col-lg-12">
+        <div class="section-3">
+        <h3 class="centered-text pink-text">On demand Pickup and Delivery Services With Realtime Update</h3>
+        <p class="centered-text grey-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus egestas feugiat felis. Mauris lobortis nisl nec mi convallis finibus. Nulla facilisi. Donec urna orci, placerat vestibulum sapien eget, laoreet egestas elit. </p>
+        </div>
+        </div>
+    
+    </div>
+    <div class="row  p-2 my-2 mx-auto align-items-center">
+            <div class="col-lg-4">
+            <h4 class="m-2 pink-text">Enter Pickup and Delivery Address.</h4>  
+            <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus egestas feugiat felis. Mauris lobortis nisl nec mi convallis finibus. Nulla facilisi. Donec urna orci, placerat vestibulum sapien eget, laoreet egestas elit.</p>  
+            </div>
+            <div class="col-lg-4">
+                    <h4 class="m-2 pink-text">Select Nearest And Preferred Dispatcher</h4>  
+                    <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus egestas feugiat felis. Mauris lobortis nisl nec mi convallis finibus. Nulla facilisi. Donec urna orci, placerat vestibulum sapien eget, laoreet egestas elit.</p>  
+                    </div>                
+            <div class="col-lg-4">
+                            <h4 class="m-2 pink-text">Get It Picked Up and Delivered Quick</h4>  
+                            <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus egestas feugiat felis. Mauris lobortis nisl nec mi convallis finibus. Nulla facilisi. Donec urna orci, placerat vestibulum sapien eget, laoreet egestas elit.</p>  
+                            </div>
+            </div>     
+</div>
+<div id="download-app">
+<div class="container">
+<div class="white-text p-5" id="download-app-text">
+<h1>
+Download Our App
+</h1>
+<p>
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus egestas feugiat felis. Mauris lobortis nisl nec mi convallis finibus. Nulla facilisi. Donec urna orci, placerat vestibulum sapien eget, laoreet egestas elit.
+</p>
+<img src="/src/assets/img/Assets/google-play-badge-en.png" class="img-fluid">
+</div>
+</div>
+</div>
+<div id="request-driver-2">
+<div class="container">
+<div class="row p-5">
+<div class="col-md-6">
+<h3 class="grey-text w-50">Request For A BoxIt Delivery Driver</h3>
+<input class="form-control full-rounded-input m-2" placeholder="Pickup Address">
+<input class="form-control full-rounded-input m-2" placeholder="Drop Address">
+<button class="full-rounded-button p-2 m-2">Request Boxit</button>
+</div>
+<div class="col-md-6">
+ <img class="img-fluid" src="/src/assets/img/Assets/map.PNG">   
+</div>
+</div>
+</div>
+</div>
+<app-dispatch-div></app-dispatch-div>
+<div class="container">
+        <div class="row">
+                <div class="col-lg-12">
+                   <p class="centered-text p-3">As trusted by</p>
+                </div>
+              </div>
+                <div class="row p-4  mx-auto">
+                        <div class="col-lg-3">
+                        <img alt="spectranet-logo" src="/src/assets/img/Assets/spectranet-logo.png">
+                        </div>
+                        <div class="col-lg-2">
+                         <img alt="bukka-hut-logo" src="/src/assets/img/Assets/Bukka-Hut-Logo.png">
+                         </div>
+                         <div class="col-lg-2">
+                         <img alt="mega-chicken-logo" src="/src/assets/img/Assets/Mega-Chicken-Logo-3D-Low-Res.png">
+                         </div>
+                         <div class="col-lg-2">
+                          <img alt="fuud-logo" src="/src/assets/img/Assets/nhrh9dpsslom5ssyb4xv.png">
+                         </div>
+                         <div class="col-lg-3">
+                         <img alt="the-place-logo" src="/src/assets/img/Assets/header_the-place-lagos.png">
+                         </div>
+                        </div>
+</div>
+<app-testimonial></app-testimonial>
+<app-footer></app-footer>

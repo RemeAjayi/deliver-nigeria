@@ -12,3 +12,52 @@
     z-index: 2;
     padding: 5% 0;
     }
+
+    .input-group
+    {
+        font-family: 'Montserrat', sans-serif;
+    }
+    #request-button
+    {
+        background-color: #5c0429;
+        border-radius: 0 2rem 2rem 0;
+        color: #fff;
+        width: 10rem;
+        text-align: center !important;
+    } 
+    #rounded-input
+    {
+        border-radius: 2rem 0 0 2rem; 
+        height: calc(3rem + 2px);
+        border-color: white;
+        color: #aaaaaa;
+    }
+    #input-2
+    {
+        height: calc(3rem + 2px);
+        border-color: white;
+        color: #aaaaaa;
+    }
+    #download-app
+    {
+      background-color: #5c0429;
+
+    }
+    #download-app-text
+    {
+        width: 40%;
+    }
+    .full-rounded-input
+    {
+      border-radius: 2rem;
+      color: #aaaaaa;
+      width: 80%;
+    }
+    .full-rounded-button
+    {
+     color: #ffffff;
+     border-radius: 2rem;  
+     background-color: #5c0429;
+     width: 80%;
+     border: 0;
+    }
