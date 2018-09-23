@@ -12,6 +12,11 @@ import { FooterComponent } from './footer/footer.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
 import { CarouselModule } from 'ngx-bootstrap';
 import { BsDropdownModule } from 'ngx-bootstrap';
+import { CourierServicesComponent } from './courier-services/courier-services.component';
+import { NavbarSecondaryComponent } from './navbar-secondary/navbar-secondary.component';
+import { FoodDeliveryComponent } from './food-delivery/food-delivery.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { DriverComponent } from './driver/driver.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +27,12 @@ import { BsDropdownModule } from 'ngx-bootstrap';
     DispatchDivComponent,
     SuscribeComponent,
     FooterComponent,
-    TestimonialComponent
+    TestimonialComponent,
+    CourierServicesComponent,
+    NavbarSecondaryComponent,
+    FoodDeliveryComponent,
+    PageNotFoundComponent,
+    DriverComponent
   ],
   imports: [
     BrowserModule,
@@ -31,6 +41,7 @@ import { BsDropdownModule } from 'ngx-bootstrap';
     BsDropdownModule.forRoot()
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [DriverComponent]
 })
 export class AppModule { }
