@@ -7,19 +7,19 @@ export const DRIVERS: Driver[] = [
       plateNo: 'AA884BKN',
        timeAway:30, 
        rating:4, 
-       img_url:'/src/assets/img/Assets/old-driver-2.jpg'  },
+       img_url:'assets/img/Assets/old-driver-2.jpg'  },
        { id: 1,
         name: 'Akindayo Marvel',
          carType:'Toyota Camry', 
          plateNo: 'BB884BKN',
           timeAway:30, 
           rating:4, 
-          img_url:'/src/assets/img/Assets/old-driver-2.jpg'  },
+          img_url:'assets/img/Assets/old-driver-2.jpg'  },
           { id: 1,
             name: 'Moses Eromosele',
              carType:'Toyota Hilux', 
              plateNo: 'AA8E4BKN',
               timeAway:30, 
               rating:4, 
-              img_url:'/src/assets/img/Assets/old-driver-2.jpg'  }
+              img_url:'assets/img/Assets/old-driver-2.jpg'  }
 ];
