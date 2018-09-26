@@ -6,7 +6,7 @@ import { Component,
   ComponentFactory,
   OnInit } from '@angular/core';
  import { ActivatedRoute, Router } from '@angular/router';
- import {DriverComponent} from '../driver/driver.component';
+//  import {DriverComponent} from '../driver/driver.component';
 
 @Component({
   selector: 'app-courier-services',
