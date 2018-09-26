@@ -1,3 +1,26 @@
+<app-navbar></app-navbar>
+<app-navbar-secondary></app-navbar-secondary>
+<div class="banner">
+    <div class="overlay">
+        <div class="container w-50">
+            <div class="row">
+                <h2 class="yellow-text my-5 mx-auto centered-text">
+                    Nearby Dispatchers
+                </h2>
+            </div>
+            <div class="row">
+                <div class="input-group m-2">
+                    <input type="text" class="form-control" id="rounded-input" placeholder="Pickup Address">
+                    <input type="text" class="form-control" id="input-2" placeholder="Delivery Address">
+                    <div class="input-group-append">
+                        <button class="input-group-text" id="request-button" (click)="findDriver()">Request Boxit</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
 <div class="container">
   <div class="row m-5">
     <div *ngFor="let driver of drivers" class="col-md-4">
@@ -96,3 +119,6 @@
         </div>
       </div>
 </div>
+<app-dispatch-div></app-dispatch-div>
+<app-suscribe></app-suscribe>
+<app-footer></app-footer>

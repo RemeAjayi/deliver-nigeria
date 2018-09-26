@@ -5,7 +5,8 @@ import { Component,
   ComponentRef,
   ComponentFactory,
   OnInit } from '@angular/core';
-  import {DriverComponent} from '../driver/driver.component';
+ import { ActivatedRoute, Router } from '@angular/router';
+ import {DriverComponent} from '../driver/driver.component';
 
 @Component({
   selector: 'app-courier-services',
@@ -14,20 +15,29 @@ import { Component,
 })
 export class CourierServicesComponent implements OnInit {
 
-  componentRef: any; 
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router
+){}
 
-  @ViewChild('drivergrid', { read: ViewContainerRef }) entry: ViewContainerRef;
-    constructor(private resolver: ComponentFactoryResolver) { }
+  // componentRef: any; 
+
+  // @ViewChild('drivergrid', { read: ViewContainerRef }) entry: ViewContainerRef;
+  //   constructor(private resolver: ComponentFactoryResolver) { }
   
-    createComponent() {
-      this.entry.clear();
-      const factory = this.resolver.resolveComponentFactory(DriverComponent);
-      this.componentRef = this.entry.createComponent(factory);
-      // const componentRef = this.entry.createComponent(factory);
-    }
+  //   createComponent() {
+  //     this.entry.clear();
+  //     const factory = this.resolver.resolveComponentFactory(DriverComponent);
+  //     this.componentRef = this.entry.createComponent(factory);
+  //     // const componentRef = this.entry.createComponent(factory);
+  //   }
  
-    destroyComponent() {
-      this.componentRef.destroy();
+  //   destroyComponent() {
+  //     this.componentRef.destroy();
+  // }
+  findDriver()
+  {
+    this.router.navigate(['/find-driver']);
   }
 
   ngOnInit() {

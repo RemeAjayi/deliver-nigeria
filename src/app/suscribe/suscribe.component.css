@@ -1,0 +1,21 @@
+.input-group
+{
+    font-family: 'Montserrat', sans-serif;
+}
+#basic-addon2
+{
+    background-color: #5c0429;
+    border-radius: 0 2rem 2rem 0;
+    box-shadow:2px 5px 2px 1px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    width: 20rem;
+    text-align: center !important;
+} 
+#suscribe-email
+{
+    border-radius: 2rem 0 0 2rem; 
+    height: calc(4rem + 2px);
+    border-color: white;
+    box-shadow:2px 5px 2px 1px rgba(0, 0, 0, 0.2);
+    color: #aaaaaa;
+}
