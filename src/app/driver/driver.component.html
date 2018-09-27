@@ -21,15 +21,15 @@
         </div>
     </div>
 </div>
-<div class="container">
+<div class="container monty">
   <div class="row m-5">
     <div *ngFor="let driver of drivers" class="col-md-4">
-    <div class="card">
+    <div class="card mx-auto">
     <i class="fa fa-car-alt pink-text float-left p-3"></i>
     <img class="card-img-top rounded-circle mx-auto"  src={{driver.img_url}}>
     <div class="card-body">
     <div class="row">
-    <h5 class="pink-text centered-text mx-auto">{{driver.name}}</h5>
+    <h5 class="centered-text mx-auto medium-weight">{{driver.name}}</h5>
     </div>
     <div class="row">
         <div class="rating yellow-text mx-auto">
@@ -40,87 +40,96 @@
             <i class="fa fa-star-half"></i>
             </div>
     </div>
+    <hr class="m-2 separator">
     <div class="row mx-auto">
-      <div class="col-md-6">
-          <p class="pink-text">{{driver.carType}}</p>
+      <div class="col-md-6 half-line-height p-1">
+          <p class="pink-text medium-weight">{{driver.carType}}</p>
           <p class="grey-text"> Car Type</p>
       </div>
-      <div class="col-md-6">
-          <p class="pink-text">{{driver.plateNo}}</p>
+      <div class="col-md-6 half-line-height p-1">
+          <p class="pink-text medium-weight">{{driver.plateNo}}</p>
           <p class="grey-text"> Plate No</p>
       </div>
     </div>
+    <hr class="m-2 separator">
+    <p class="grey-text centered-text">30 mins away</p>
     <button id="select-driver" class="p-2">SELECT DRIVER</button>
     </div>
     </div>
     </div>
   </div>
-  <div class="row m-5">
-      <div *ngFor="let driver of drivers" class="col-md-4">
-      <div class="card">
-        <i class="fa fa-car-alt pink-text float-left p-3"></i>
-      <img class="card-img-top rounded-circle mx-auto"  src={{driver.img_url}}>
-      <div class="card-body">
-      <div class="row">
-      <h5 class="pink-text centered-text mx-auto">{{driver.name}}</h5>
-      </div>
-      <div class="row">
-          <div class="rating  yellow-text mx-auto">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-half"></i>
-              </div>
-      </div>
-      <div class="row mx-auto">
-        <div class="col-md-6">
-            <p class="pink-text">{{driver.carType}}</p>
-            <p class="grey-text"> Car Type</p>
-        </div>
-        <div class="col-md-6">
-            <p class="pink-text">{{driver.plateNo}}</p>
-            <p class="grey-text"> Plate No</p>
-        </div>
-      </div>
-      <button id="select-driver" class="p-2">SELECT DRIVER</button>
-      </div>
-      </div>
-      </div>
-    </div>
-    <div class="row m-5">
-        <div *ngFor="let driver of drivers" class="col-md-4">
-        <div class="card">
+<div class="row m-5">
+    <div *ngFor="let driver of drivers" class="col-md-4">
+        <div class="card mx-auto">
             <i class="fa fa-car-alt pink-text float-left p-3"></i>
-        <img class="card-img-top rounded-circle mx-auto"  src={{driver.img_url}}>
-        <div class="card-body">
-        <div class="row">
-        <h5 class="pink-text centered-text mx-auto">{{driver.name}}</h5>
-        </div>
-        <div class="row">
-            <div class="rating  yellow-text mx-auto">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half"></i>
+            <img class="card-img-top rounded-circle mx-auto" src={{driver.img_url}}>
+            <div class="card-body">
+                <div class="row">
+                    <h5 class="centered-text mx-auto medium-weight">{{driver.name}}</h5>
                 </div>
+                <div class="row">
+                    <div class="rating yellow-text mx-auto">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                </div>
+                <hr class="m-2 separator">
+                <div class="row mx-auto">
+                    <div class="col-md-6 half-line-height p-1">
+                        <p class="pink-text medium-weight">{{driver.carType}}</p>
+                        <p class="grey-text"> Car Type</p>
+                    </div>
+                    <div class="col-md-6 half-line-height p-1">
+                        <p class="pink-text medium-weight">{{driver.plateNo}}</p>
+                        <p class="grey-text"> Plate No</p>
+                    </div>
+                </div>
+                <hr class="m-2 separator">
+                <p class="grey-text centered-text">30 mins away</p>
+                <button id="select-driver" class="p-2">SELECT DRIVER</button>
+            </div>
         </div>
-        <div class="row mx-auto">
-          <div class="col-md-6">
-              <p class="pink-text">{{driver.carType}}</p>
-              <p class="grey-text"> Car Type</p>
-          </div>
-          <div class="col-md-6">
-              <p class="pink-text">{{driver.plateNo}}</p>
-              <p class="grey-text"> Plate No</p>
-          </div>
+    </div>
+</div>
+<div class="row m-5">
+    <div *ngFor="let driver of drivers" class="col-md-4">
+        <div class="card mx-auto">
+            <i class="fa fa-car-alt pink-text float-left p-3"></i>
+            <img class="card-img-top rounded-circle mx-auto" src={{driver.img_url}}>
+            <div class="card-body">
+                <div class="row">
+                    <h5 class="centered-text mx-auto medium-weight">{{driver.name}}</h5>
+                </div>
+                <div class="row">
+                    <div class="rating yellow-text mx-auto">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                </div>
+                <hr class="m-2 separator">
+                <div class="row mx-auto">
+                    <div class="col-md-6 half-line-height p-1">
+                        <p class="pink-text medium-weight">{{driver.carType}}</p>
+                        <p class="grey-text"> Car Type</p>
+                    </div>
+                    <div class="col-md-6 half-line-height p-1">
+                        <p class="pink-text medium-weight">{{driver.plateNo}}</p>
+                        <p class="grey-text"> Plate No</p>
+                    </div>
+                </div>
+                <hr class="m-2 separator">
+                <p class="grey-text centered-text">30 mins away</p>
+                <button id="select-driver" class="p-2">SELECT DRIVER</button>
+            </div>
         </div>
-        <button id="select-driver" class="p-2">SELECT DRIVER</button>
-        </div>
-        </div>
-        </div>
-      </div>
+    </div>
+</div>
 </div>
 <app-dispatch-div></app-dispatch-div>
 <app-suscribe></app-suscribe>

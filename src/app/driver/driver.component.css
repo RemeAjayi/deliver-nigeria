@@ -6,6 +6,10 @@
     background-repeat: no-repeat;
     text-align: center;
 }
+img{
+    height: 128px;
+    widows: 128px;
+}
 .overlay{
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
@@ -49,5 +53,26 @@ img{
     width: 50%;
 }
 i{
-    font-size: 2em;
+    font-size: 1em;
+}
+.separator
+{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #aaaaaa;
+    padding: 0;
+}
+.half-line-height
+{
+    line-height: 5px;
+}
+.medium-weight
+{
+    font-weight: 600;
+}
+.card
+{
+    border: 0;
+    box-shadow:2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
