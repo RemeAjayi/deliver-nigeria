@@ -16,11 +16,11 @@ section
 {
     width: 30%;
     color: #fff;
-    margin-left: 20%;
+    /* margin-left: 20%; */
 }
 button
 {
-    width: 350px;
+    width: 20rem;
     background-color: #5c0429;
     border-radius: 50px;
     border: 0; 
