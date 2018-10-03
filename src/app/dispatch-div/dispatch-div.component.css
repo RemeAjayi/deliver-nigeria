@@ -12,18 +12,20 @@ padding: 5% 0;
     background-size: cover;
     background-repeat: no-repeat;
 }
-section
-{
-    width: 30%;
-    color: #fff;
-    /* margin-left: 20%; */
-}
 button
 {
-    width: 20rem;
     background-color: #5c0429;
     border-radius: 50px;
     border: 0; 
     color: #fff;
-    padding: 10px;
+}
+
+@media (min-width: 768px)
+{
+    button
+    {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    }
+
 }
