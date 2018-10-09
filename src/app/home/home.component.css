@@ -27,16 +27,24 @@ width: 50%;
 {
    .image
 {
-    max-width: 100%;
+    max-width: 400px !important;
     display: block;
     height: auto;
 }
 
 }
-@media only screen and (min-width: 800px)
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+img.image.img-fluid {
+    max-width: 150% !important;
+    margin-left: -90px !important;
+}
+}
+
+
+@media only screen and (min-width: 1370px)
 {
-.image{
-width: 180%;
-/* max-width: 100%; */
-    }
+.img-fluid {
+    max-width: 150% !important;
+}
 }
