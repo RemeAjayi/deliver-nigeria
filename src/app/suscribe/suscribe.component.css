@@ -23,3 +23,36 @@
     color: #aaaaaa;
 }
 }
+@media (max-width: 767px)
+{
+ #basic-addon2
+{
+    background-color: #5c0429;
+    border-radius:  2em !important;
+    box-shadow:2px 5px 2px 1px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    width: 200px;
+    font-size: 12px !important;
+} 
+#suscribe-email
+{
+    border-radius: 2em !important; 
+    border-color: white;
+    box-shadow:2px 5px 2px 1px rgba(0, 0, 0, 0.2);
+    color: #aaaaaa;
+    margin-bottom: 20px;
+    width: 200px;
+    font-size: 12px !important;
+}
+
+.input-group{
+    width: 200px;
+    margin: 0 auto;
+}
+/* #request-button
+{
+    width: 250px;
+} */
+}
+
+
