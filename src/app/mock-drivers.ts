@@ -5,6 +5,7 @@ export const DRIVERS: Driver[] = [
      name: 'Babatunde Marvel',
       carType:'Toyota Camry', 
       plateNo: 'AA884BKN',
+      vehicleType: 'car-alt',
        timeAway:30, 
        rating:4, 
        img_url:'assets/img/Assets/old-driver-2.jpg'  },
@@ -12,6 +13,7 @@ export const DRIVERS: Driver[] = [
         name: 'Akindayo Marvel',
          carType:'Toyota Camry', 
          plateNo: 'BB884BKN',
+         vehicleType: 'motorcycle',
           timeAway:30, 
           rating:4, 
           img_url:'assets/img/Assets/old-driver-2.jpg'  },
@@ -19,6 +21,7 @@ export const DRIVERS: Driver[] = [
             name: 'Moses Eromosele',
              carType:'Toyota Hilux', 
              plateNo: 'AA8E4BKN',
+             vehicleType: 'truck',
               timeAway:30, 
               rating:4, 
               img_url:'assets/img/Assets/old-driver-2.jpg'  }

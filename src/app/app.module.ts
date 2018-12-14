@@ -33,6 +33,7 @@ import { DriverComponent } from './driver/driver.component';
     FoodDeliveryComponent,
     PageNotFoundComponent,
     DriverComponent
+    
   ],
   imports: [
     BrowserModule,

@@ -38,6 +38,35 @@
         border-color: white;
         color: #aaaaaa;
     }
+
+
+@media (max-width: 767px)
+{
+ #request-button
+{
+    background-color: #5c0429;
+    border-radius:  2em !important;
+    color: #fff;
+    width: 275px;
+    font-size: 12px !important;
+    text-align: center !important;
+} 
+#rounded-input, #input-2
+{
+    border-radius: 2em !important; 
+    border-color: white;
+    color: #aaaaaa;
+    width: 275px;
+    font-size: 12px !important;
+    height: calc(2rem + 2px) !important;
+}
+
+.input-group{
+    width: 275px;
+    margin: 0 auto;
+}
+}
+
     #download-app
     {
       background-color: #5c0429;
