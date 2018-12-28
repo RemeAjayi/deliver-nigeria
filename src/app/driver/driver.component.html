@@ -46,15 +46,15 @@
 </div>
 <div class="container monty">
 
-<div class="row m-5 clearfix">
+<div class="row m-5">
   <!-- <div class="clearfix" ng-if="$index % 3 == 0"></div> -->
-    <div *ngFor="let driver of drivers" class="col-md-4">
-        <div class="card mx-auto" [hidden]="motorTag != 'all' && driver.vehicleType!=motorTag">
-            <i class="fa fa-{{driver.vehicleType}} pink-text float-left p-3"></i>
-            <img class="card-img-top rounded-circle mx-auto" src={{driver.img_url}}>
+    <div *ngFor="let result of results" class="col-md-4">
+        <div class="card mx-auto">
+            <i class="fa fa-{{result.vehicleType}} pink-text float-left p-3"></i>
+            <img class="card-img-top rounded-circle mx-auto" src={{result.img_url}}>
             <div class="card-body">
                 <div class="row">
-                    <h5 class="centered-text mx-auto medium-weight">{{driver.name}}</h5>
+                    <h5 class="centered-text mx-auto medium-weight">{{result.name}}</h5>
                 </div>
                 <div class="row">
                     <div class="rating yellow-text mx-auto">
@@ -68,11 +68,11 @@
                 <hr class="m-2 separator">
                 <div class="row mx-auto">
                     <div class="col-md-6 half-line-height p-1">
-                        <p class="pink-text medium-weight">{{driver.carType}}</p>
+                        <p class="pink-text medium-weight">{{result.carType}}</p>
                         <p class="grey-text"> Car Type</p>
                     </div>
                     <div class="col-md-6 half-line-height p-1">
-                        <p class="pink-text medium-weight">{{driver.plateNo}}</p>
+                        <p class="pink-text medium-weight">{{result.plateNo}}</p>
                         <p class="grey-text"> Plate No</p>
                     </div>
                 </div>
