@@ -76,3 +76,23 @@ i{
     border: 0;
     box-shadow:2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
+.vehicle-selector
+{
+    border: 1px solid #707070;
+    border-radius: 5px;
+    width: 280px;
+}
+.vehicle-selector .nav-item
+{
+    border-right: 1px solid #707070;
+}
+/* use angular active class for the li and make the background pink */
+.vehicle-selector .nav-item .nav-link
+{
+    color: #676768;
+}
+.vehicle-selector .nav-item .nav-link:active
+{
+    color: #fff;
+
+}

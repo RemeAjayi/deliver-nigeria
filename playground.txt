@@ -1,0 +1,19 @@
+for (let driver of this.drivers)
+      {
+        
+        if(this.vehicleFilter(driver, getTag))
+        {
+            this.results.push(driver)
+        }
+      }
+      console.log(JSON.stringify(this.results));
+      return this.results;
+  }
+  vehicleFilter(elem, type)
+  {
+    if (elem.vehicleType == type)
+    {
+      return elem;
+    }
+  }
+}

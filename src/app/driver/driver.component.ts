@@ -8,9 +8,14 @@ import {DRIVERS} from '../mock-drivers';
 })
 export class DriverComponent implements OnInit {
    drivers = DRIVERS;
+   motorTag: string = 'all';
+  // results = [];
   constructor() { }
 
   ngOnInit() {
   }
 
+  switch(getTag){
+   this.motorTag = getTag;     
+  }
 }
