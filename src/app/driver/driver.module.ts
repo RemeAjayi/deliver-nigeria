@@ -10,6 +10,7 @@ import { MapComponent } from './driver-detail/map/map.component';
 import { MessageComponent } from './driver-detail/message/message.component';
 import { ProfileComponent } from './driver-detail/profile/profile.component';
 import { DriverRoutingModule } from './driver-routing.module';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { DriverRoutingModule } from './driver-routing.module';
     CommonModule,
     CarouselModule.forRoot(),
     BsDropdownModule.forRoot(),
-    DriverRoutingModule
+    DriverRoutingModule,
+    SharedModule
   ],
   providers: [],
   entryComponents: [DriverComponent]
