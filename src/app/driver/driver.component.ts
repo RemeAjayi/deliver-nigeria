@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {DRIVERS} from '../mock-drivers';
-import { Driver } from '../driver';
+import {DRIVERS} from './mock-drivers';
+import { Driver } from './driver-model';
 
 
 @Component({
@@ -19,11 +19,6 @@ export class DriverComponent implements OnInit {
   }
 
   switch(getTag){
-<<<<<<< HEAD
-   this.motorTag = getTag;     
-  }
-}
-=======
     //  this.motorTag = getTag; 
        this.results = [];   
          if(getTag == 'all')
@@ -53,9 +48,14 @@ export class DriverComponent implements OnInit {
       }
 
       //end of switch Tag
+
+      selectDriver()
+      {
+        
+      }
+
     }
 
 
 
 
->>>>>>> 660a5331e3cbc88368c3353cb9d01bdaaea2174a
