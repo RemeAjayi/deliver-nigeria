@@ -8,8 +8,10 @@
       <li class="nav-item" >
           <a class="nav-link" routerLink="/"><img src="assets/img/Assets/Group 811.png"></a>
       </li>
-      <li class="nav-item active" routerLinkActive="active">
-        <a class="nav-link" routerLink="/courier-services">Courier Services <span class="sr-only">(current)</span></a>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/courier-services"
+         routerLinkActive="router-link-active" [routerLinkActiveOptions] = "{exact:true}" >
+         Courier Services <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item" routerLinkActive="active">
         <a class="nav-link" routerLink="/food-delivery">Food Delivery</a>

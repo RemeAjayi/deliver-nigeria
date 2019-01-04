@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { TestimonialComponent } from './home/testimonial/testimonial.component';
 import { CarouselModule } from 'ngx-bootstrap';
 import { BsDropdownModule } from 'ngx-bootstrap';
+import { ModalModule } from 'ngx-bootstrap/modal';
 import { CourierServicesComponent } from './courier-services/courier-services.component';
 import { NavbarSecondaryComponent } from './navbar-secondary/navbar-secondary.component';
 import { FoodDeliveryComponent } from './food-delivery/food-delivery.component';
@@ -28,6 +29,7 @@ import { OrderComponent } from './food-delivery/restaurant-detail/order/order.co
 import { ReviewComponent } from './food-delivery/restaurant-detail/review/review.component';
 import { InfoComponent } from './food-delivery/restaurant-detail/info/info.component';
 import { DriverModule } from './driver/driver.module';
+
 
 @NgModule({
   declarations: [
@@ -61,7 +63,8 @@ import { DriverModule } from './driver/driver.module';
     AppRoutingModule,
     CarouselModule.forRoot(),
     BsDropdownModule.forRoot(),
-    DriverModule
+    DriverModule,
+    ModalModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent],

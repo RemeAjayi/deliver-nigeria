@@ -13,3 +13,7 @@
 {
     color: #ffcf27;
 }
+.router-link-active
+{
+    color: #ffcf27 !important;
+}
