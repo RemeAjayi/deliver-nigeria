@@ -1,11 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import {DRIVERS} from './mock-drivers';
-import { Driver } from './driver-model';
 import { Component, OnInit, TemplateRef } from '@angular/core';
 import { BsModalService } from 'ngx-bootstrap/modal';
 import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
-import {DRIVERS} from '../mock-drivers';
-import { Driver } from '../driver';
+import {DRIVERS} from './mock-drivers';
+import { Driver } from './driver-model';
 
 
 
