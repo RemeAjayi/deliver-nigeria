@@ -19,6 +19,7 @@ import { ReviewComponent } from './food-delivery/restaurant-detail/review/review
 import { InfoComponent } from './food-delivery/restaurant-detail/info/info.component';
 import { DriverModule } from './driver/driver.module';
 import { SharedModule } from './shared/shared.module';
+import { ModalShowComponent } from './driver/driver.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { SharedModule } from './shared/shared.module';
     RestaurantDetailComponent,
     OrderComponent,
     ReviewComponent,
-    InfoComponent
+    InfoComponent,
+    ModalShowComponent
     
   ],
 
