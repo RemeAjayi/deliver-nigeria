@@ -37,7 +37,7 @@ export class CourierServicesComponent implements OnInit {
   // }
   findDriver()
   {
-    this.router.navigate(['/find-driver']);
+    this.router.navigate(['/driver']);
   }
 
   ngOnInit() {

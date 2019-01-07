@@ -62,8 +62,11 @@ export class DriverComponent implements OnInit {
    
     this.bsModalRef = this.modalService.show(template);
   }
+
+  getDriverDetails()
+  {
+
+  }
+
 }
-
-
-
 
