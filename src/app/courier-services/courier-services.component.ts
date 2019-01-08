@@ -1,5 +1,4 @@
-import { Component, 
-  OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
  import { ActivatedRoute, Router } from '@angular/router';
 //  import {DriverComponent} from '../driver/driver.component';
 
@@ -18,7 +17,7 @@ export class CourierServicesComponent implements OnInit {
 
   findDriver()
   {
-    this.router.navigate(['/find-driver']);
+    this.router.navigate(['driver']);
   }
 
   ngOnInit() {

@@ -4,14 +4,12 @@ import { HomeComponent }      from './home/home.component';
 import { CourierServicesComponent } from './courier-services/courier-services.component';
 import { FoodDeliveryComponent } from './food-delivery/food-delivery.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { Driver } from 'selenium-webdriver/edge';
-import { DriverComponent } from './driver/driver.component';
+
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'courier-services', component: CourierServicesComponent },
   {path: 'food-delivery', component: FoodDeliveryComponent},
-  { path: 'find-driver', component: DriverComponent },  
   {path: '**', component: PageNotFoundComponent}
 ];
 
