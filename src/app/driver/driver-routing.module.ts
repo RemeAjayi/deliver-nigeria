@@ -8,13 +8,12 @@ import { ProfileComponent } from './driver-detail/profile/profile.component';
 
 
 const driverRoutes: Routes = [
-  { path: 'driver', component: DriverComponent, children:[  
-  { path: ':id', component: DriverDetailComponent, children:[
+  { path: 'driver', component: DriverComponent},
+  { path: 'driver/:id', component: DriverDetailComponent, children:[
     {path: 'map', component: MapComponent},
     {path: 'message', component: MessageComponent},
     {path: 'profile', component: ProfileComponent}
   ] }
-]}
  ];
 
 @NgModule({

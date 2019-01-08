@@ -1,6 +1,6 @@
-import { Component, OnInit, TemplateRef } from '@angular/core';
-import { BsModalService } from 'ngx-bootstrap/modal';
-import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
+import { Component, OnInit, ViewChild, TemplateRef} from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 import {DRIVERS} from './mock-drivers';
 import { Driver } from './driver-model';
 
@@ -17,10 +17,19 @@ export class DriverComponent implements OnInit {
    motorTag: string = 'all';
    results: Driver[] = this.drivers;
 
+
+  @ViewChild("template") template: TemplateRef<any>;
+
    //declare modal component
   bsModalRef: BsModalRef;
+  selectedId: any;
 
-  constructor(private modalService: BsModalService) { }
+  constructor(
+    private modalService: BsModalService,
+    private route: ActivatedRoute,
+    private router: Router
+    
+    ) { }
 
   ngOnInit() {
   }
@@ -57,16 +66,63 @@ export class DriverComponent implements OnInit {
       }
 //end of switch Tag
   
-  openRequestModal(template: TemplateRef<any>)
+  openRequestModal(elem_id)
   {
-   
-    this.bsModalRef = this.modalService.show(template);
+    this.selectedId = elem_id;
+    const initialState = {title: 'modal'};
+    this.bsModalRef = this.modalService.show(this.template) ;
+    this.bsModalRef.content.id = elem_id;
   }
 
-  getDriverDetails()
+  getDriverDetails(id)
   {
-
+   this.router.navigate([id], {relativeTo:this.route});
   }
 
 }
 
+@Component({
+  selector: 'modal-content',
+  template: `
+   <div class="modal-header px-5 py-1">
+        <h4 class="modal-title">{{title}}Request Driver</h4>
+    </div>
+    <div class="modal-body px-5 py-1 mb-3">
+        <div class="row">
+            <div class="col-lg-6">
+             <p>Drived id - {{id}}</p>
+             <p>Pickup Location</p>
+             <p>2 Bamidele close VI Lagos</p>
+            </div>
+            <div class="col-lg-6">
+             <p>Delivery Location</p>
+             <p>5 Ocean Bay Estate Boulevard Road VI Lagos</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+            <span>Payment Method</span>
+            </div>
+          <div class="col-lg-6">
+            <span>xxxx-xxxx-xxxx-3466</span>
+          </div>
+          <div class="col-lg-2">
+        <span class="float-right pink-text"><a>Change</a></span>
+          </div>
+        
+        </div>
+        <div class="row">
+        <textarea class="form-control" placeholder="Enter Message to driver (Optional)"></textarea>
+        </div>
+        <button class="align-right" (click)="getDriverDetails(id)"> REQUEST DRIVER</button>
+    </div>
+  `
+})
+export class ModalShowComponent implements OnInit {
+ 
+  constructor(public bsModalRef: BsModalRef) { }
+
+  ngOnInit() {
+
+  }
+}
