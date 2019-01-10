@@ -16,6 +16,7 @@ export class DriverComponent implements OnInit {
    drivers = DRIVERS;
    motorTag: string = 'all';
    results: Driver[] = this.drivers;
+   config = {class: "modal-dialog-centered"};
 
 
   @ViewChild("template") template: TemplateRef<any>;
@@ -69,7 +70,8 @@ export class DriverComponent implements OnInit {
   openRequestModal(elem_id)
   {
     this.selectedId = elem_id;
-    this.bsModalRef = this.modalService.show(this.template) ;
+    this.bsModalRef = this.modalService.show(this.template, this.config) ;
+
 
   }
 

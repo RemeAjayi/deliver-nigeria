@@ -96,10 +96,16 @@ i{
     background-color: #5c0429;
     color: #fff;
 
+
 }
 
-#modal-container
+.address-text
 {
-    width: 800px;
-    background-color:#fff;
+    color:#052F51
+}
+.pink-button{
+    background-color: #5c0429;
+    color: #fff;
+    border: 0;
+    border-radius: 6px;
 }

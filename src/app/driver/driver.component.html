@@ -93,9 +93,9 @@
 
 
 <ng-template #template>
-    <div class="container" id="modal-container">
+    <div id="modal-content" class="monty">
     <div class="modal-header">
-        <h4 class="modal-title pull-left">Modal</h4>
+        <h4 class="modal-title pull-left text-center address-text">Request Driver</h4>
         <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
             <span aria-hidden="true">&times;</span>
         </button>
@@ -103,18 +103,23 @@
     <div class="modal-body px-5 py-1 mb-3">
         <div class="row">
             <div class="col-lg-6">
-            <p>Driver id - {{selectedId}}</p>
-             <p>Pickup Location</p>
-             <p>2 Bamidele close VI Lagos</p>
+            <!-- <p>Driver id - {{selectedId}}</p> -->
+             <p class="grey-text"><span>
+               <i class="fa fa-circle pink-text"></i> 
+             </span>
+             Pickup Location</p>
+             <p class="address-text">2 Bamidele close VI Lagos</p>
             </div>
             <div class="col-lg-6">
-             <p>Delivery Location</p>
-             <p>5 Ocean Bay Estate Boulevard Road VI Lagos</p>
+             <p class="grey-text"><span>
+                <i class="fa fa-circle pink-text"></i>
+            </span>Delivery Location</p>
+             <p class="address-text">5 Ocean Bay Estate Boulevard Road VI Lagos</p>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-4">
-            <span>Payment Method</span>
+            <span class="grey-text">Payment Method</span>
             </div>
           <div class="col-lg-6">
             <span>xxxx-xxxx-xxxx-3466</span>
@@ -127,7 +132,7 @@
         <div class="row">
         <textarea class="form-control" placeholder="Enter Message to driver (Optional)"></textarea>
         </div>
-        <button class="align-right" (click)="getDriverDetails(selectedId)"> REQUEST DRIVER</button>
+        <button class="float-right pink-button p-1" (click)="getDriverDetails(selectedId)"> REQUEST DRIVER</button>
 </div>
 </div>
 </ng-template>
