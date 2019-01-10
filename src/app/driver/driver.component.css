@@ -108,4 +108,17 @@ i{
     color: #fff;
     border: 0;
     border-radius: 6px;
+    font-size: 14px;
+}
+.fa-circle
+{
+    opacity: 0.5;
+}
+ .medium
+{
+    font-weight: bold;
+}
+textarea
+{
+   height: 120px;
 }

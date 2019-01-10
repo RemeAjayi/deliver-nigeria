@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute} from '@angular/router';
-
+import { DRIVERS } from './../mock-drivers';
 @Component({
   selector: 'app-driver-detail',
   templateUrl: './driver-detail.component.html',
@@ -8,6 +8,7 @@ import { ActivatedRoute} from '@angular/router';
 })
 export class DriverDetailComponent implements OnInit {
   id: number;
+  drivers = DRIVERS;
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {

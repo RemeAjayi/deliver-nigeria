@@ -16,7 +16,7 @@ export class DriverComponent implements OnInit {
    drivers = DRIVERS;
    motorTag: string = 'all';
    results: Driver[] = this.drivers;
-   config = {class: "modal-dialog-centered"};
+   config = {class: "modal-dialog-centered modal-lg"};
 
 
   @ViewChild("template") template: TemplateRef<any>;

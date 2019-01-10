@@ -13,13 +13,16 @@ h1, h2
     
     font-family: 'Montserrat', sans-serif !important;
 }
-.robo
+.robo-slab
 {
     font-family: 'Roboto Slab', sans-serif !important;
 }
 .lato
 {
     font-family: 'Lato', sans-serif !important;
+}
+.robo{
+     font-family: 'Roboto', serif !important;
 }
 
 /* p, a 
@@ -44,5 +47,5 @@ h1, h2
 }
 .centered-text
 {
-    text-align: center;
+    text-align: center !important;
 }
