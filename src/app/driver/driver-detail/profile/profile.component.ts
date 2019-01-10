@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import {DRIVERS} from './../../mock-drivers';
 
 @Component({
   selector: 'app-profile',
@@ -6,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-
-  constructor() { }
+  drivers = DRIVERS;
+  id: number;
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
+    this.route.parent.params.subscribe(params => {
+      console.log(params.id);
+      this.id = params.id;
+    });
   }
-
 }
