@@ -1,6 +1,6 @@
-import { Component, OnInit, TemplateRef } from '@angular/core';
-import { BsModalService } from 'ngx-bootstrap/modal';
-import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
+import { Component, OnInit, ViewChild, TemplateRef} from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 import {DRIVERS} from './mock-drivers';
 import { Driver } from './driver-model';
 
@@ -17,10 +17,19 @@ export class DriverComponent implements OnInit {
    motorTag: string = 'all';
    results: Driver[] = this.drivers;
 
+
+  @ViewChild("template") template: TemplateRef<any>;
+
    //declare modal component
   bsModalRef: BsModalRef;
+  selectedId: any;
 
-  constructor(private modalService: BsModalService) { }
+  constructor(
+    private modalService: BsModalService,
+    private route: ActivatedRoute,
+    private router: Router
+    
+    ) { }
 
   ngOnInit() {
   }
@@ -57,13 +66,16 @@ export class DriverComponent implements OnInit {
       }
 //end of switch Tag
   
-  openRequestModal(template: TemplateRef<any>)
+  openRequestModal(elem_id)
   {
-   
-    this.bsModalRef = this.modalService.show(template);
+    this.selectedId = elem_id;
+    this.bsModalRef = this.modalService.show(this.template) ;
+
+  }
+
+
+  getDriverDetails(id)
+  {
+   this.router.navigate([id], {relativeTo:this.route});
   }
 }
-
-
-
-

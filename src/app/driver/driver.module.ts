@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { CarouselModule } from 'ngx-bootstrap';
 import { BsDropdownModule } from 'ngx-bootstrap';
-import { DriverComponent } from './driver.component';
+import { DriverComponent} from './driver.component';
 import { RequestOverlayComponent } from './request-overlay/request-overlay.component';
 import { DriverDetailComponent } from './driver-detail/driver-detail.component';
 import { MapComponent } from './driver-detail/map/map.component';

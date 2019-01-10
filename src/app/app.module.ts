@@ -21,6 +21,7 @@ import { DriverModule } from './driver/driver.module';
 import { SharedModule } from './shared/shared.module';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,12 +43,12 @@ import { SharedModule } from './shared/shared.module';
   // if you have another module that uses your components delete from here.
   imports: [
     BrowserModule,
-    AppRoutingModule,
     CarouselModule.forRoot(),
     BsDropdownModule.forRoot(),
     SharedModule,
     DriverModule,
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
