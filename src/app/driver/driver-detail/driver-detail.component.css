@@ -33,12 +33,19 @@ a {
     overflow-x: hidden;
 }
 .label-div{
-    max-width: 55%;
+    /* width: 55%; */
     color: #fff;
-    position: relative;
-    left: 20%;
     padding-top: 5%;
-
+    text-align: center;
+}
+@media (min-width: 800px)
+{
+  .label-div{
+      width: 55%;
+      position: relative;
+      left: 20%;
+      text-align: left;
+  }
 }
 .img-circle
 {
