@@ -2,24 +2,24 @@
 <app-navbar-secondary></app-navbar-secondary>
 <div class="banner">
     <div class="overlay">
-    <div class="row label-div">
-        <div class="col-lg-2">
-            <!-- <img class="rounded-circle" src={{drivers[id].img_url}} height="150px"> -->
+    <div class="row label-div  d-flex align-items-end">
+        <div class="col-lg-4 d-flex justify-content-end">
+            <img class="img-circle" src={{drivers[id].img_url}}>
         </div>
-        <div class="col-lg-10">
-            <h2>{{drivers[id].name}}</h2>
+        <div class="col-lg-6">
+            <h4>{{drivers[id].name}}</h4>
             <!-- <div *ngFor= "let i of drivers[id].rating">
                       <i class="fa fa-star"></i>
                   </div> -->
     
             <div class="row">
                 <div class="col-lg-6">
-                    <h4>{{drivers[id].carType}}</h4>
-                    <h6>Car Type</h6>
+                    <h6>{{drivers[id].carType}}</h6>
+                    <p>Car Type</p>
                 </div>
                 <div class="col-lg-6">
-                    <h4>{{drivers[id].plateNo}}</h4>
-                    <h6>Plate No</h6>
+                    <h6>{{drivers[id].plateNo}}</h6>
+                    <p>Plate No</p>
                 </div>
             </div>
         </div>
