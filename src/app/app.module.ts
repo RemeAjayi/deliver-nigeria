@@ -42,7 +42,7 @@ import { SharedModule } from './shared/shared.module';
   // check browser console for errors if your page is blank
   // if you have another module that uses your components delete from here.
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     CarouselModule.forRoot(),
     BsDropdownModule.forRoot(),
     SharedModule,

@@ -26,8 +26,7 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": [
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -93,6 +92,14 @@
             "exclude": [
               "**/node_modules/**"
             ]
+          }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/deliver-nigeria-server",
+            "main": "src/main.server.ts",
+            "tsConfig": "src/tsconfig.server.json"
           }
         }
       }
