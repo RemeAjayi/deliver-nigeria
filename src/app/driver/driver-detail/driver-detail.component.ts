@@ -14,7 +14,8 @@ export class DriverDetailComponent implements OnInit {
   ngOnInit() {
     this.route.params.subscribe(params => {
       console.log(params.id);
-      this.id = params.id;
+      this.id = params.id - 1;
+      //1 must be removed from the index, because arrays are zero-based
     });
   }
 
