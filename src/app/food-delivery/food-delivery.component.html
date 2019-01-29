@@ -2,10 +2,10 @@
 <app-navbar-secondary></app-navbar-secondary>
 <form>
 <select *ngFor= let state of states>
- <option></option>
+ <option>{{state.name}}</option>
 </select>   
-<select *ngFor=let city of cities>
+<!-- <select *ngFor=let city of cities>
 <option></option>
-</select> 
+</select>  -->
 <button type="submit">Find Restaurants</button>
 </form>

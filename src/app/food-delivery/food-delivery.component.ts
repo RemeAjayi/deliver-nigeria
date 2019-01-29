@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { GetLocationService } from './services/get-location.service';
+
 
 @Component({
   selector: 'app-food-delivery',
@@ -7,10 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FoodDeliveryComponent implements OnInit {
    
-  
-  constructor() { }
+  states = [];
+  constructor(private getLocationSerivice: GetLocationService) { }
 
   ngOnInit() {
   }
 
+  loadStates()
+  {
+    this.getLocationSerivice.getStates().subscribe((data: any)=>{
+      this.states = data;
+    }
+  });
 }
