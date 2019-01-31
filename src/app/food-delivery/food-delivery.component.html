@@ -1,11 +1,13 @@
 <app-navbar></app-navbar>
 <app-navbar-secondary></app-navbar-secondary>
+<div class="container">
 <form>
-<select *ngFor= let state of states>
- <option>{{state.name}}</option>
+<select class="mx-auto">
+ <option *ngFor="let state of states">{{state.name}}</option>
 </select>   
 <!-- <select *ngFor=let city of cities>
 <option></option>
 </select>  -->
-<button type="submit">Find Restaurants</button>
+<button (click)="loadStates()">Find Restaurants</button>
 </form>
+</div>

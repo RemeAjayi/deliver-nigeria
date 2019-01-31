@@ -20,6 +20,7 @@ import { ReviewComponent } from './food-delivery/restaurant-detail/review/review
 import { InfoComponent } from './food-delivery/restaurant-detail/info/info.component';
 import { DriverModule } from './driver/driver.module';
 import { SharedModule } from './shared/shared.module';
+import { FoodDeliveryModule } from './food-delivery/food-delivery.module';
 
 
 
@@ -49,6 +50,7 @@ import { SharedModule } from './shared/shared.module';
     BsDropdownModule.forRoot(),
     SharedModule,
     DriverModule,
+    FoodDeliveryModule,
     ModalModule.forRoot(),
     AppRoutingModule
   ],

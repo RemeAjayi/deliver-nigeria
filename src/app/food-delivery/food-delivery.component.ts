@@ -9,16 +9,18 @@ import { GetLocationService } from './services/get-location.service';
 })
 export class FoodDeliveryComponent implements OnInit {
    
-  states = [];
+  states = {};
   constructor(private getLocationSerivice: GetLocationService) { }
 
   ngOnInit() {
+    // this.loadStates();
   }
 
   loadStates()
   {
-    this.getLocationSerivice.getStates().subscribe((data: any)=>{
-      this.states = data;
-    }
-  });
+    this.getLocationSerivice.getStates().subscribe(
+      (data)=> this.states = data,
+      (error) =>console.log(error)
+    );
+}
 }

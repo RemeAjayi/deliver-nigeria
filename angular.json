@@ -93,15 +93,16 @@
               "**/node_modules/**"
             ]
           }
-        },
-        "server": {
-          "builder": "@angular-devkit/build-angular:server",
-          "options": {
-            "outputPath": "dist/deliver-nigeria-server",
-            "main": "src/main.server.ts",
-            "tsConfig": "src/tsconfig.server.json"
-          }
         }
+        // ,
+        // "server": {
+        //   "builder": "@angular-devkit/build-angular:server",
+        //   "options": {
+        //     "outputPath": "dist/deliver-nigeria-server",
+        //     "main": "src/main.server.ts",
+        //     "tsConfig": "src/tsconfig.server.json"
+        //   }
+        // }
       }
     },
     "deliver-nigeria-e2e": {
