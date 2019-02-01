@@ -9,11 +9,11 @@ import { GetLocationService } from './services/get-location.service';
 })
 export class FoodDeliveryComponent implements OnInit {
    
-  states = {};
+  states= [];
   constructor(private getLocationSerivice: GetLocationService) { }
 
   ngOnInit() {
-    // this.loadStates();
+    this.loadStates();
   }
 
   loadStates()

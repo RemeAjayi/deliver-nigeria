@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 
 @Injectable({
@@ -8,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
 export class GetLocationService {
   constructor(private http: HttpClient) { }
 
-  getStates()
+  getStates(): Observable<any>
   {
     return this.http.get('http://locationsng-api.herokuapp.com/api/v1/states');
   }
