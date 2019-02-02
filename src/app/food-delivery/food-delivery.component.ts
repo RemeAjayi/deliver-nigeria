@@ -10,6 +10,7 @@ import { GetLocationService } from './services/get-location.service';
 export class FoodDeliveryComponent implements OnInit {
    
   states= [];
+  cities=[];
   constructor(private getLocationSerivice: GetLocationService) { }
 
   ngOnInit() {
@@ -23,4 +24,12 @@ export class FoodDeliveryComponent implements OnInit {
       (error) =>console.log(error)
     );
 }
+ loadCities(state: string)
+ {
+   this.getLocationSerivice.getCities(state).subscribe(
+     (data)=> this.cities = data,
+     (error)=> console.log(error)
+   );
+  console.log(state);
+ }
 }

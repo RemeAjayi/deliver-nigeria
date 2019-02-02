@@ -1,0 +1,1 @@
+// restaurant, type of food eg chinese rating

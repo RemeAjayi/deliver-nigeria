@@ -2,12 +2,13 @@
 <app-navbar-secondary></app-navbar-secondary>
 <div class="container">
 <form>
-<select class="mx-auto">
+<select class="mx-auto" #stateSelect (change)="loadCities(stateSelect.value)">
+    <!-- onselect pass getCities with state.name -->
  <option *ngFor="let state of states">{{state.name}}</option>
 </select>   
-<!-- <select *ngFor=let city of cities>
-<option></option>
-</select>  -->
+<select >
+<option *ngFor="let city of cities">{{city}}</option>
+</select> 
 <button>Find Restaurants</button>
 </form>
 </div>
