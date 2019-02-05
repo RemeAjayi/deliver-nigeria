@@ -21,6 +21,8 @@ import { InfoComponent } from './food-delivery/restaurant-detail/info/info.compo
 import { DriverModule } from './driver/driver.module';
 import { SharedModule } from './shared/shared.module';
 import { FoodDeliveryModule } from './food-delivery/food-delivery.module';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService } from './in-memory-data.service';
 
 
 
@@ -46,6 +48,9 @@ import { FoodDeliveryModule } from './food-delivery/food-delivery.module';
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     HttpClientModule,
+    HttpClientInMemoryWebApiModule.forRoot(
+      InMemoryDataService, { dataEncapsulation: false }
+    ),
     CarouselModule.forRoot(),
     BsDropdownModule.forRoot(),
     SharedModule,
