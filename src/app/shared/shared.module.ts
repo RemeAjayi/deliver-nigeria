@@ -4,15 +4,15 @@ import { NavbarSecondaryComponent } from "../navbar-secondary/navbar-secondary.c
 import { SuscribeComponent } from "../home/suscribe/suscribe.component";
 import { DispatchDivComponent } from "../home/dispatch-div/dispatch-div.component";
 import { FooterComponent } from "../footer/footer.component";
-// import { AppRoutingModule } from './../app-routing.module';
-
 import { CommonModule } from '@angular/common';
+import { RouterModule } from "@angular/router";
 
 // All component used across app and feature modules should go here
 @NgModule({
-// imports:[
-//     AppRoutingModule
-// ],
+imports:[
+    CommonModule,
+    RouterModule
+],
 declarations:[
     NavbarComponent,
     NavbarSecondaryComponent,
@@ -22,7 +22,7 @@ declarations:[
 ],
 exports:[
     CommonModule,
-    // AppRoutingModule,
+    RouterModule,
     NavbarComponent,
     NavbarSecondaryComponent,
     SuscribeComponent,

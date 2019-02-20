@@ -11,16 +11,16 @@ import { CarouselModule } from 'ngx-bootstrap';
 import { BsDropdownModule } from 'ngx-bootstrap';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { CourierServicesComponent } from './courier-services/courier-services.component';
-import { FoodDeliveryComponent } from './food-delivery/food-delivery.component';
+// import { FoodDeliveryComponent } from './food-delivery/food-delivery.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { RestaurantFinderComponent } from './food-delivery/restaurant-finder/restaurant-finder.component';
-import { RestaurantDetailComponent } from './food-delivery/restaurant-detail/restaurant-detail.component';
-import { OrderComponent } from './food-delivery/restaurant-detail/order/order.component';
-import { ReviewComponent } from './food-delivery/restaurant-detail/review/review.component';
-import { InfoComponent } from './food-delivery/restaurant-detail/info/info.component';
-import { DriverModule } from './driver/driver.module';
+// import { RestaurantFinderComponent } from './food-delivery/restaurant-finder/restaurant-finder.component';
+//import { RestaurantDetailComponent } from './food-delivery/restaurant-detail/restaurant-detail.component';
+//import { OrderComponent } from './food-delivery/restaurant-detail/order/order.component';
+//import { ReviewComponent } from './food-delivery/restaurant-detail/review/review.component';
+//import { InfoComponent } from './food-delivery/restaurant-detail/info/info.component';
+// import { DriverModule } from './driver/driver.module';
 import { SharedModule } from './shared/shared.module';
-import { FoodDeliveryModule } from './food-delivery/food-delivery.module';
+// import { FoodDeliveryModule } from './food-delivery/food-delivery.module';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
 
@@ -33,13 +33,13 @@ import { InMemoryDataService } from './in-memory-data.service';
     LandingDivComponent,
     TestimonialComponent,
     CourierServicesComponent,
-    FoodDeliveryComponent,
+    // FoodDeliveryComponent,
     PageNotFoundComponent,
-    RestaurantFinderComponent,
-    RestaurantDetailComponent,
-    OrderComponent,
-    ReviewComponent,
-    InfoComponent
+    // RestaurantFinderComponent,
+   // RestaurantDetailComponent,
+   // OrderComponent,
+   // ReviewComponent,
+   // InfoComponent
     
   ],
 
@@ -54,10 +54,11 @@ import { InMemoryDataService } from './in-memory-data.service';
     CarouselModule.forRoot(),
     BsDropdownModule.forRoot(),
     SharedModule,
-    DriverModule,
-    FoodDeliveryModule,
+    AppRoutingModule,
+    // DriverModule,
+    // FoodDeliveryModule,
     ModalModule.forRoot(),
-    AppRoutingModule
+    // AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
